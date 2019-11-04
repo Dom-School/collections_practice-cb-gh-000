@@ -50,4 +50,6 @@ def sum_array(array)
   array.inject {|sum, number| sum + number}
 end
 
-puts "#{[1,2].each_with_index.collect{|element, index| }}"
+def add_s(array)
+  array.each_with_index.collect{|element, index| index != 2 ? element + "s" }
+end
